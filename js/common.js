@@ -216,6 +216,12 @@ $(window).on('load', function() {
 	$('.preloader').delay(100).fadeOut('slow');
 });
 
+var F = navigator.userAgent.search("Firefox");
+
+if (F > -1) {
+	$('.preloader').delay(800).fadeOut('slow');
+};
+
 //E-mail Ajax Send
 	$("form").submit(function() { //Change
 		var th = $(this);
@@ -224,11 +230,11 @@ $(window).on('load', function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			$(th).find('.success').addClass('active').css('display','flex').hide().fadeIn();
 			setTimeout(function() {
-				// Done Functions
+				$(th).fund('success').removeClass('active').fadeOut();
 				th.trigger("reset");
-			}, 1000);
+			}, 3000);
 		});
 		return false;
 	});
