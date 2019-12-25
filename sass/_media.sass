@@ -1,0 +1,246 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.welcome
+		.h1
+			font-size: 64px
+	.header-contacts
+		font-size: 15px
+	.carousel-services-item
+		flex-direction: column
+	.footer-column
+		text-align: center
+		
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.welcome
+		.h1
+			font-size: 48px
+		strong
+			.fa 
+				color: #fff6	
+	
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	body.ishome
+		.site-header
+			min-height: 630px
+			height: 100vh
+	.header-contacts
+	 text-align: left
+	 padding-left: 30px
+	.header-composition
+		>p
+			font-size: 15px
+			margin-top: 10px
+		.button
+			margin-top: 18px
+			padding: 14px 30px
+			font-size: 14px
+	.s-callb
+		background-repeat: no-repeat
+		background-size: 280%
+		background-position: 10%
+		.carpet
+			background-image: url(../img/callback/logo2.jpg)
+		.callback-s
+			background-color: rgba(#fff, 0.75)
+	.s-review
+		.review
+			margin: auto
+			width: 75%
+		.owl-nav
+			.owl-prev, .owl-next
+				top: 40%
+				font-size: 50px
+			.owl-prev
+				left: 0px
+			.owl-next
+				right: 0px
+	.s-partners.section-overlay
+		h2
+			margin-bottom: 0px
+		.owl-stage
+			.owl-item
+				margin: 5px auto 20px
+				img 
+					max-width: 75%
+
+		.owl-nav
+			.owl-prev, .owl-next
+				top: 30%
+				font-size: 50px
+			.owl-prev
+				left: -5px
+			.owl-next
+				right: -5px
+	.s-review 
+		.quotes
+			&:before
+				font-size: 45px
+				top: 150px
+				left: 15px
+			&:after
+				font-size: 45px
+				top: 183px
+				right: 45px
+
+	.footer-column
+		text-align: center
+	.img-svg.logo-footer
+		width: 155px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.logo
+		svg, img
+			margin: 40px 30% 0
+			width: 160px
+			height: auto
+			path
+				fill: #3c80f0!important
+	.header-flex
+		top: 20px
+	.welcome
+		.h1
+			font-size: 28px
+			font-weight: 400
+			margin-top: 5px
+		p
+			span
+				font-size: 9px
+		strong
+			margin-top: 14px
+			font-size: 14px
+	.topline
+		.phone
+			display: none
+	.header-composition
+		>p
+			font-size: 14px
+			margin-top: 15px
+		.button
+			margin-top: 10px
+			padding: 12px 28px
+			font-size: 12px
+
+	.carousel-services-composition
+		.h3
+			font-size: 24px
+	section 
+		.h2
+			text-align: center
+		p
+			margin: auto 3% !important
+	.s-callb
+		background-size: cover
+	.s-partners.section-overlay
+		.owl-nav
+			.owl-prev, .owl-next
+				top: 26%
+				font-size: 35px
+			.owl-prev
+				left: -15px
+			.owl-next
+				right: -15px
+	.s-review
+		.review
+			margin: auto
+			width: 80%
+		.owl-nav
+			.owl-prev, .owl-next
+				top: 0px
+				font-size: 40px
+			.owl-prev
+				left: -25px
+			.owl-next
+				right: -25px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	.welcome
+		.h1
+			font-size: 28px
+			font-weight: 400
+			margin-top: 5px
+		p
+			span
+				font-size: 7px
+		strong
+			margin-top: 14px
+			font-size: 14px	
+	.header-composition
+		margin-top: 0
+		>p
+			font-size: 12px
+			margin-top: 10px
+		.button
+			padding: 11px 26px
+			font-size: 12px
+	.s-partners.section-overlay
+		.owl-nav
+			.owl-prev, .owl-next
+				top: 22%
+			.owl-prev
+				left: -25px
+			.owl-next
+				right: -25px
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+	.header-composition
+		margin-top: 25%
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) and (max-height : 801px)
+	/**/
+
+	.header-composition
+		margin-top: 5%
+/* Notebooks, Wide Screens */
+@media only screen and (min-width : 1366px)
+	/**/
+	.header-composition
+		margin-top: -3%
+/* Notebooks, Wide Screens */
+@media only screen and (min-width : 1440px)
+	/**/
+	.header-composition
+		margin-top: 20%
+/* Extra Large Devices, Wide Screens */
+@media only screen and (min-width : 1680px)
+	/**/
+	.header-composition
+		margin-top: 30%
+/* HD Devices, Wide Screens */
+@media only screen and (min-width : 1900px)
+	/**/
+	.header-composition
+		margin-top: 40%
